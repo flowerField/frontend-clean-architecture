@@ -19,6 +19,7 @@ export function useAuthenticate() {
   // which would encapsulate all input data.
   async function authenticate(name: UserName, email: Email): Promise<void> {
     const user = await auth.auth(name, email);
+    // 通知，认证成功还是认证失败
     storage.updateUser(user);
   }
 

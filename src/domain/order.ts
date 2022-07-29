@@ -13,6 +13,8 @@ export type Order = {
   total: PriceCents;
 };
 
+
+// 创建订单是系统做的事情，而不是用户做的事情，所以放在domain
 export function createOrder(user: User, cart: Cart): Order {
   return {
     cart,
@@ -22,3 +24,6 @@ export function createOrder(user: User, cart: Cart): Order {
     total: totalPrice(cart.products),
   };
 }
+
+// 用例：购买
+// 用例：

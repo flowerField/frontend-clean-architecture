@@ -17,6 +17,8 @@ export function useAddToCart() {
 
     const { cart } = storage;
     const updated = addProduct(cart, product);
+
+    // 选择完之后，更新团队
     storage.updateCart(updated);
   }
 
