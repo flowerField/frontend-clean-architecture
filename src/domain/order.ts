@@ -24,6 +24,3 @@ export function createOrder(user: User, cart: Cart): Order {
     total: totalPrice(cart.products),
   };
 }
-
-// 用例：购买
-// 用例：
