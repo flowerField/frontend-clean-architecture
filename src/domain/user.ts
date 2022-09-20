@@ -14,3 +14,6 @@ export function hasAllergy(user: User, ingredient: Ingredient): boolean {
 export function hasPreference(user: User, ingredient: Ingredient): boolean {
   return user.preferences.includes(ingredient);
 }
+
+
+// 用户偏好(是否喜欢 ｜ 是否过敏)

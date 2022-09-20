@@ -24,3 +24,7 @@ export function createOrder(user: User, cart: Cart): Order {
     total: totalPrice(cart.products),
   };
 }
+
+
+// 这个应该算做是架构设计
+// 软件设计
